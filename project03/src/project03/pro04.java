@@ -3,7 +3,7 @@ package project03;
 public class pro04 {
 
 	public static void main(String[] args) {
-		person lee = new person("Lee",21);
+		person lee = new person("Lee",31);
 		
 		lee.sayHello();
 		System.out.println(lee.name);
@@ -30,12 +30,31 @@ public class pro04 {
 		car1.sayHello();
 		
 		Car car2 = new Car();
-		car2.name = "아반떼";
+		car2.name = "현대";
 		car2.age = 2021;
 		car2.sayHello();
 		
+		dog1.ageCal();
+		dog2.ageCal();
+		
+		System.out.println(dog1.compareToAge(lee.age));// lee보다 나이가 많음.
+		System.out.println(dog2.compareToAge(lee.age));// lee보다 나이가 적음.
+		printA(dog1.compareToAge(lee.age), dog1.name, lee.name);
+		printA(dog2.compareToAge(lee.age), dog2.name, lee.name);
+		
+		dog1.printB(lee);
+		dog2.printB(lee);
+		
 	}
 
+	public static void printA(boolean b, String dog, String person) {
+		if(b) {
+			System.out.println(dog + "의 나이가 " + person + " 더 많습니다.");
+		}else {
+			System.out.println(dog + "의 나이가 " + person +" 나이가 더 적습니다.");
+		}
+	}
+	
 }
 
 
