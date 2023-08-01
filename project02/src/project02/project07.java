@@ -116,30 +116,47 @@ public class project07 {
 		// 계급 순으로 승패가 갈린다.
 		// 거지와 왕이 만나면 거지를 낸 플레이어가 게임에서 승리한다.
 		
+		
 		String[] cardGame = {"노예","시민","귀족","왕"};// new String[4];
 		Scanner sc = new Scanner(System.in);
+		int[] arr1 = new int[4];
+		
 		int score1 = 0;
 		int score2 = 0;
+		int hr1 = 0;
 
 		for(int i=0;i<4;i++) {
 			System.out.println("카드 : {1.노예, 2.시민, 3.귀족, 4.왕}");
 			System.out.print("플레이어 1 : ");
 			int player1 = sc.nextInt();
-			System.out.print("플레이어 2 : ");
-			int player2 = sc.nextInt();
+//			System.out.print("플레이어 2 : ");
+//			int player2 = sc.nextInt();
+			int computer = (int)(Math.random()*4+1);
+			int j =0;
+			arr1[j] = computer;
+			for(int k = 0; k<j;k++) {
+				if(arr1[k] == computer) {
+					i--;
+				}
+			}
+			arr1[j] = computer;
 			
-			if((player1 ==1 && player2 ==4) || (player1 ==4 && player2 ==1)){
+			System.out.println("컴퓨터 : " + computer);
+			
+			if((player1 ==1 && computer ==4) || (player1 ==4 && computer ==1)){
 				System.out.println("노예와 왕이 만났습니다.");
 				if(player1 ==1) {
 					score1 += 4;
+					hr1 = 1;
 				}else {
 					score2 +=4;
+					hr1=2;
 				}
 				break;
 			}
-			else if(player1>player2) {
+			else if(player1>computer) {
 				score1++;
-			}else if(player2>player1) {
+			}else if(computer>player1) {
 				score2++;
 			}
 			
@@ -153,7 +170,7 @@ public class project07 {
 			}
 		}
 		
-		
+
 
 	}
 
