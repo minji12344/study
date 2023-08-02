@@ -70,7 +70,6 @@ public class Arrangement {
 			System.out.print(str[b]);
 //				System.out.print(str[i-1]+ " " + str[i] + " ");
 		}
-		
 //		int e = 0;
 //		if(a==3) { 
 //			if(c==e){
