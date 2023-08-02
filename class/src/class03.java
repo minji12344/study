@@ -15,7 +15,7 @@ public class class03 {
 		// 사용자가 음수를 입려하면 종료, 사용자가 두 자리수 이상을 입력하면 더해지지 않아야한다.
 		int b = 0;
 		
-		for(int i = 0; i <100; i++) {
+		for(;true;) {                                  //int i = 0; i<=i; i++
 			System.out.print("입력 :");
 			int a = scan.nextInt();
 			
@@ -23,15 +23,30 @@ public class class03 {
 				break;
 			}else if(a>=10) {
 				continue;
-			}else if(i<100) {
+			}else if(a<100) {
 				b += a;
 				System.out.println("입력된 값 : "+ a +", 합 : " + b);
 				
 			}
 		}
 		
+		int num = 0;
+		int sum = 0;
+		while(num<=num) {
+			num = scan.nextInt();
+			if(num<0) {
+				break;
+			}else if(num>=10) {
+				continue;
+			}
+				sum += num;
+			
+			System.out.println("입력된 값 : "+ num +", 합 : " + sum);
+		}
 		
-	}
+	
+
+}
 
 }
 
