@@ -22,9 +22,13 @@ public class Arrangement {
 		
 		int a = 0;
 		int b = 0;
+		int c = 0;
 		
-		System.out.println("어떤 열차를 탈래? 1.급행 2.일반");
+		
+		System.out.println("어떤 열차를 탈래? 1.급행 2.일반 3.환승");
 		a = scan.nextInt();
+		System.out.println("어디서 출발할래?");
+		c = scan.nextInt();
 		System.out.println("어디서 내릴래?");
 		b = scan.nextInt();
 		
@@ -36,17 +40,51 @@ public class Arrangement {
 			}		
 		}
 		
+//		if(a ==2) {
+//			for(int i = 0; i<=b; i++) {
+//				System.out.print(str[i] + " ");		
+//				if(b-1 == i) {
+//					break;
+//				}
+//			}
+//		}
+		
+		//출발역
 		if(a ==2) {
-			for(int i = 0; i<=b; i++) {
-				System.out.print(str[i] + "역입니다.");		
-				if(b-1 == i) {
+			for(int i = (int)c; i<=b; i++) {
+				System.out.print(str[i] + " ");
+				if(b == i) {
 					break;
 				}
 			}
 		}
 		
-		
-		
+	//	환승하기 (급행 -> 일반)
+		if(a==3) {
+			for(int i =(int)c; i<=b; i++) {
+				if(i%2 == 0) { 
+//					d = str[i];
+					 System.out.print(str[i]+ " ");
+				}		
+			}
+			System.out.print(str[b]);
+//				System.out.print(str[i-1]+ " " + str[i] + " ");
+		}
+//		int e = 0;
+//		if(a==3) { 
+//			if(c==e){
+//				syso
+//				for(int i =(int)c; i<=b; i++) {
+//					if(i%2 == 0) { 
+//	//					d = str[i];
+//						 System.out.print(str[i]+ " ");
+//					}		
+//				}
+//				System.out.print(str[b]);
+//	//				System.out.print(str[i-1]+ " " + str[i] + " ");
+//			}
+//		
+//		}
 	}
 
 }
