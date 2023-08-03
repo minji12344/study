@@ -1,4 +1,4 @@
-// 사람 설계도
+// 사람 설계도 (객체)
 public class Person {
 	String name;
 	int age;

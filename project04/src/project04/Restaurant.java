@@ -19,10 +19,10 @@ public class Restaurant {
 	}
 	void printRes() {
 		if(count == 0) {
-			System.out.println("국가 : " +nation + ". 이름 : " + name + ",평점 : 0");
+			System.out.println("국가 : " +nation + ", 가게이름 : " + name + ", 평점 : 0");
 		}
 		else {
-			System.out.println("국가 : " +nation + ". 이름 : " + name + ",평점 : " +point/count);			
+			System.out.println("국가 : " +nation + ", 가게이름 : " + name + ", 평점 : " +point/count);			
 		}
 	}
 	

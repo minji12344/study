@@ -86,9 +86,9 @@ public class class04 {
 				else {
 					arr[i][j]= 0;
 				}
-				if(i>0 || j> 0 || i< arr.length-1 || j< arr.length-1) {
-					
-				}
+//				if(i>0 || j> 0 || i< arr.length-1 || j< arr.length-1) {
+//					
+//				}
 			}
 			
 		}
@@ -97,11 +97,32 @@ public class class04 {
 			for(int j = 0; j<8; j++) {
 				System.out.print(arr[i][j] + " ");
 			}
-			System.out.println();
+			System.out.println(" ");
 		}
+		
+		System.out.println("=====================================");
+
 		
 		// 마름모
 		
+		for (int i = 0; i<8; i++) {
+			for(int j =0; j<8; j++) {
+				if(i+j==3 || i+j==11) {
+					arr[i][j] = 0;
+				}else if(i-j ==4 || j-i ==4) {
+					arr[i][j] = 0;
+				}
+				else {
+					arr[i][j] = 8*i+j+1;
+				}
+			}
+		}
+		for(int i = 0; i <8; i++) {
+			for(int j = 0; j<8; j++) {
+				System.out.print(arr[i][j] + " ");
+			}
+			System.out.println(" ");
+		}
 		
 	}
 }

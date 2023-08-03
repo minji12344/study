@@ -63,7 +63,7 @@ public class king {
 		int computer = (int)(Math.random()*4+1);
 		
 		for(int k = 0; k < arr.length; k++) {
-			// System.out.println("arr [ " + k +"] = " + arr[k]);
+			 System.out.println("arr [ " + k +"] = " + arr[k]);
 			if(arr[k] == computer) {
 				computer = (int)(Math.random()*4+1);
 				k = -1; // k = 0; 문제의 원인 -> k++ 1번째 검사를 한다.
