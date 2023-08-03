@@ -19,6 +19,7 @@ public class Arrang {
 		int str1 = sc.nextInt();
 		System.out.print("어디 역에서 내릴래? ");
 		int str2 = sc.nextInt();
+		// equals
 		
 		if(str1 == 1) {
 			for(int i=0; i<station.length; i++) {
