@@ -1,4 +1,4 @@
-package project04;
+package Food;
 
 public class American extends Restaurant{
 	String[] menu; // = new String[3];
@@ -8,13 +8,13 @@ public class American extends Restaurant{
 		setting();
 	}
 	
-	American(String nation, String name, int point){
-		super(nation, name, point);
+	American(String name, int point){
+		super(name, point);
 		this.setting();
 	}
 	
-	American(String nation, String name, int point, String menu, int price){
-		super(nation, name, point);
+	American(String name, int point, String menu, int price){
+		super(name, point);
 
 		setting();
 		this.menu[0] = menu;
@@ -22,11 +22,19 @@ public class American extends Restaurant{
 	}
 	
 	
-	American(String nation, String name, int point, String[] menu, int[] price){
-		super(nation, name, point);
+	American(String name, int point, String[] menu, int[] price){
+		super(name, point);
 		this.menu = menu;
 		this.price = price;
 	}
+	
+	American(String nation,String type, String name, int point, String[] menu, int[] price){ // 메인 객체
+		super(nation,type, name, point);
+		
+		this.menu = menu;
+		this.price = price;
+	}
+	
 	
 	void setting() {
 		menu = new String[3];

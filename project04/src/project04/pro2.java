@@ -2,6 +2,11 @@ package project04;
 
 import java.util.ArrayList;
 
+import Food.American;
+import Food.Japanese;
+import Food.Korean;
+import Food.Restaurant;
+
 public class pro2 {
 
 	public static void main(String[] args) {
@@ -39,69 +44,69 @@ public class pro2 {
 		System.out.println(store02.scor);
 		
 		System.out.println("=========Restaurant===Korean====Japanese====American===========");
-		
-		Restaurant res = new Restaurant();
-		res.printRes();
-		
-		Korean korean = new Korean();
-		korean.printRes();
-		
-		Japanese jap = new Japanese();
-		jap.printRes();
-				
-		American ame = new American();
-		ame.printRes();
-		
-		Korean kor2 = new Korean ( "대한민국","한식당", 5, "백반", 5000);
-		kor2.printRes();
-		
-		String[] menu = {"초밥", "라멘", "우동"};
-		int[] price = {10000,8000,6000};
-		Japanese jsp2 = new Japanese("일본", "일식당", 4, menu, price);
-		jsp2.printRes();
-		
-		jsp2.setPoint(1);
-		jsp2.setPoint(1);
-		jsp2.setPoint(1);
-		jsp2.setPoint(1);
-		jsp2.setPoint(1);
-		jsp2.setPoint(1);
-		jsp2.printRes();
-		
-		//Korean[] korea = new Korean[5];
-		ArrayList<Korean> koreaList = new ArrayList<>();
-		System.out.println("size : " + koreaList.size());
-		koreaList.add(korean);
-		System.out.println("size : " + koreaList.size());
-		koreaList.add(kor2);
-		System.out.println("size : " + koreaList.size());
-		
-		Korean kor3 = new Korean("대한민국", "국밥", 3, "국밥", 6000);
-		koreaList.add(kor3);
-		
-		koreaList.add(new Korean("대한민국", "김밥", 4, "김밥", 4000));
-		
-		
-		koreaList.add(new Korean("대한민국", "돼지", 6, "삼겹살" , 15000));
-		
-		
-		System.out.println(koreaList.get(2).name); //arr[2] = ArrayList.get(2).name
-		koreaList.remove(2);
-		
-		koreaList.get(2).printRes();
-		
-		System.out.println("size : " + koreaList.size());
-
-		koreaList.get(0).printRes();
-		koreaList.get(1).printRes();
-		koreaList.get(3).printRes();
-		
-
-		for(int i =0; i<koreaList.size(); i++) {
-			koreaList.get(i).printRes();
-			
-		}
-	
+//		
+//		Restaurant res = new Restaurant();
+//		res.printRes();
+//		
+//		Korean korean = new Korean();
+//		korean.printRes();
+//		
+//		Japanese jap = new Japanese();
+//		jap.printRes();
+//				
+//		American ame = new American();
+//		ame.printRes();
+//		
+//		Korean kor2 = new Korean ( "대한민국","한식당", 5, "백반", 5000);
+//		kor2.printRes();
+//		
+//		String[] menu = {"초밥", "라멘", "우동"};
+//		int[] price = {10000,8000,6000};
+//		Japanese jsp2 = new Japanese("일본", "일식당", 4, menu, price);
+//		jsp2.printRes();
+//		
+//		jsp2.setPoint(1);
+//		jsp2.setPoint(1);
+//		jsp2.setPoint(1);
+//		jsp2.setPoint(1);
+//		jsp2.setPoint(1);
+//		jsp2.setPoint(1);
+//		jsp2.printRes();
+//		
+//		//Korean[] korea = new Korean[5];
+//		ArrayList<Korean> koreaList = new ArrayList<>();
+//		System.out.println("size : " + koreaList.size());
+//		koreaList.add(korean);
+//		System.out.println("size : " + koreaList.size());
+//		koreaList.add(kor2);
+//		System.out.println("size : " + koreaList.size());
+//		
+//		Korean kor3 = new Korean("대한민국", "국밥", 3, "국밥", 6000);
+//		koreaList.add(kor3);
+//		
+//		koreaList.add(new Korean("대한민국", "김밥", 4, "김밥", 4000));
+//		
+//		
+//		koreaList.add(new Korean("대한민국", "돼지", 6, "삼겹살" , 15000));
+//		
+//		
+//		System.out.println(koreaList.get(2).name); //arr[2] = ArrayList.get(2).name
+//		koreaList.remove(2);
+//		
+//		koreaList.get(2).printRes();
+//		
+//		System.out.println("size : " + koreaList.size());
+//
+//		koreaList.get(0).printRes();
+//		koreaList.get(1).printRes();
+//		koreaList.get(3).printRes();
+//		
+//
+//		for(int i =0; i<koreaList.size(); i++) {
+//			koreaList.get(i).printRes();
+//			
+//		}
+//	
 		
 		
 	}

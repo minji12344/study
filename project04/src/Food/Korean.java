@@ -1,4 +1,4 @@
-package project04;
+package Food;
 
 public class Korean extends Restaurant{
 	String[] menu; // = new String[3];
@@ -8,13 +8,22 @@ public class Korean extends Restaurant{
 		setting();
 	}
 	
-	Korean(String nation, String name, int point){
-		super(nation, name, point);
-		this.setting();
+	Korean(String nation, String type){
+		super(nation, type);
+		
+		setting();
+//		this.menu[0] = menu;
+//		this.price[0] = price;
+
 	}
 	
-	Korean(String nation, String name, int point, String menu, int price){
-		super(nation, name, point);
+//	Korean(String name, int point){
+//		super(name, point);
+//		this.setting();
+//	}
+	
+	Korean(String name, int point, String menu, int price){
+		super(name,point);
 
 		setting();
 		this.menu[0] = menu;
@@ -22,8 +31,15 @@ public class Korean extends Restaurant{
 	}
 	
 	
-	Korean(String nation, String name, int point, String[] menu, int[] price){
-		super(nation, name, point);
+	Korean(String name, int point, String[] menu, int[] price){ // 메인 객체
+		super(name, point);
+		this.menu = menu;
+		this.price = price;
+	}
+	
+	Korean(String nation,String type, String name, int point, String[] menu, int[] price){ // 메인 객체
+		super(nation,type, name, point);
+		
 		this.menu = menu;
 		this.price = price;
 	}
@@ -37,13 +53,14 @@ public class Korean extends Restaurant{
 			price[i] = 0;
 		}
 	}
+	
 	void printRes() {
 		super.printRes();
 		for(int i=0; i<menu.length;i++) {
 			System.out.println("메뉴 : " + menu[i] + ", 가격 : " + price[i]);
 		}
 	}
-	
+		
 }
 
 
@@ -52,3 +69,5 @@ public class Korean extends Restaurant{
 // 누가 이겼는지 판단을 하고, 게임 할 때마다 주사위 값이 바뀌어야 한다.
 // 3. 카드게임 -> 객체화
 // 컴퓨터, 사람를 객체화한다. 컴퓨터VS컴퓨터, 컴퓨터VS사람, 사람VS사람
+
+// 2차원 배열문제 시계방향 혹은 반시계 방향으로 소용돌이 치듯이 채워보기

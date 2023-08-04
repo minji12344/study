@@ -10,6 +10,10 @@ public class Animals {
 		species = "동물";
 	}
 	
+	Animals(String name){
+		this.name = name;
+	}
+	
 	Animals(String name, int age,String species){
 		this.name = name;
 		this.age = age;
@@ -25,4 +29,5 @@ public class Animals {
 	void trt() {
 		System.out.println(name + "가 먹습니다.");
 	}
+	
 }

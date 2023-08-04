@@ -15,13 +15,13 @@ public class Dice01 {
 
 	for(int i = 0; i<=10; i++) {
 		System.out.println("주사위를 굴립니다 1.y 2.n");
-		int a = scan.nextInt();
+		String a = scan.nextLine();
 		}
 	}
 	
 	void game(int a, int play1) {
 		
-		if(a == 1) {
+		if(a==0) {
 			int num = (int)(Math.random()*5)+1;
 			play1 = num; 
 			System.out.println(name + "님의 숫자는 " + num +" 입니다.");

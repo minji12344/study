@@ -1,4 +1,4 @@
-package project04;
+package Food;
 
 public class Japanese extends Restaurant{
 	String[] menu; // = new String[3];
@@ -8,13 +8,13 @@ public class Japanese extends Restaurant{
 		setting();
 	}
 	
-	Japanese(String nation, String name, int point){
-		super(nation, name, point);
+	Japanese(String name, int point){
+		super(name, point);
 		this.setting();
 	}
 	
-	Japanese(String nation, String name, int point, String menu, int price){
-		super(nation, name, point);
+	Japanese(String name, int point, String menu, int price){
+		super(name, point);
 
 		setting();
 		this.menu[0] = menu;
@@ -22,8 +22,15 @@ public class Japanese extends Restaurant{
 	}
 	
 	
-	Japanese(String nation, String name, int point, String[] menu, int[] price){
-		super(nation, name, point);
+	Japanese(String name, int point, String[] menu, int[] price){
+		super(name, point);
+		this.menu = menu;
+		this.price = price;
+	}
+	
+	Japanese(String nation,String type, String name, int point, String[] menu, int[] price){ // 메인 객체
+		super(nation,type, name, point);
+		
 		this.menu = menu;
 		this.price = price;
 	}
@@ -38,6 +45,7 @@ public class Japanese extends Restaurant{
 		}
 	}
 	void printRes() {
+		//super.Food();
 		super.printRes();
 		for(int i=0; i<menu.length;i++) {
 			System.out.println("메뉴 : " + menu[i] + ", 가격 : " + price[i]);
