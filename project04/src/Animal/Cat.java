@@ -1,4 +1,4 @@
-package project04;
+package Animal;
 
 public class Cat extends Animal{
 	String name;

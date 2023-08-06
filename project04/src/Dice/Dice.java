@@ -1,4 +1,4 @@
-package project04;
+package Dice;
 
 import java.util.Scanner;
 
@@ -8,13 +8,16 @@ public class Dice {
 		// 2. 주사위 게임하는 사람들 - 객체가 생성되면 랜덤한 주사위 값(1~6)을 가지고 있다. 다른 객체와 주사위 값을 가지고 승부한다. 
 		// 누가 이겼는지 판단을 하고, 게임 할 때마다 주사위 값이 바뀌어야 한다.
 
-		Dice01 dice = new Dice01("민민");
-		Dice02 di = new Dice02("지지");
+		Dice01 dice = new Dice01();
+		Dice02 di = new Dice02();
 		
 		dice.play();
-		di.play();
+//		di.play();
 		
-		dice.game(1, 2);
+//		dice.game();
+//		dice.Result();
+		
+		
 		
 		
 		

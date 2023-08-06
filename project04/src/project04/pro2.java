@@ -2,6 +2,9 @@ package project04;
 
 import java.util.ArrayList;
 
+import Animal.Animal;
+import Animal.Cat;
+import Animal.Dog;
 import Food.American;
 import Food.Japanese;
 import Food.Korean;
@@ -10,20 +13,20 @@ import Food.Restaurant;
 public class pro2 {
 
 	public static void main(String[] args) {
-		Animal animal = new Animal();
-		Dog dog = new Dog("강아지", 4);
-		Cat cat = new Cat("고양이", 5);
-		
-		dog.eat();
-		dog.sleep();
-		System.out.println(dog.name + " " + dog.age);
-		cat.eat();
-		cat.sleep();
-		System.out.println(cat.name + " "+ cat.age);
-		
-		animal.eat();
-		animal.sleep();
-		System.out.println(animal.name + " "+ animal.age);
+//		Animal animal = new Animal();
+//		Dog dog = new Dog("강아지", 4);
+//		Cat cat = new Cat("고양이", 5);
+//		
+//		dog.eat();
+//		dog.sleep();
+//		System.out.println(dog.name + " " + dog.age);
+//		cat.eat();
+//		cat.sleep();
+//		System.out.println(cat.name + " "+ cat.age);
+//		
+//		animal.eat();
+//		animal.sleep();
+//		System.out.println(animal.name + " "+ animal.age);
 
 		Store02 store02 = new Store02("ㅇㅇ", 20390, 10);
 		

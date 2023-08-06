@@ -1,4 +1,4 @@
-package project04;
+package Animal;
 // 부모클래스
 public class Animal {
 	String name;

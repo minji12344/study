@@ -1,4 +1,4 @@
-package project04;
+package Animal;
 
 public class Dog extends Animal{
 	
