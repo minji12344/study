@@ -5,14 +5,14 @@ import java.util.Scanner;
 public class Dice01 {
 	
 //	String name;
+	
+//	Dice01(String name){
+//		this.name = name;
+//	}
 	int play1;
 	int play2;
 	String a;
 	
-	
-//	Dice01(String name){
-//		this.play1 = play1;
-//	}
 	void play () {
 	Scanner scan = new Scanner(System.in);
 
@@ -21,13 +21,17 @@ public class Dice01 {
 		a = scan.nextLine();
 
 		if(a.equals("")){
-			int num = (int)(Math.random()*5)+1;
-			play1 = num; 
+			int num = (int)(Math.random()*6)+1;
+			int num2 = (int)(Math.random()*6)+1;
+			play1 = num;
+			play2 = num2;
 			System.out.println("play1의 숫자는 " + num + " 입니다.");
+			System.out.println("play2의 숫자는 " + num2 + " 입니다.");
 		}else{
 			System.out.println("종료합니다.");
 			break;
 			}
+			Result();
 		}
 	}
 	void Result() {

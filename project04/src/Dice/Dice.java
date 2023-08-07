@@ -8,14 +8,17 @@ public class Dice {
 		// 2. 주사위 게임하는 사람들 - 객체가 생성되면 랜덤한 주사위 값(1~6)을 가지고 있다. 다른 객체와 주사위 값을 가지고 승부한다. 
 		// 누가 이겼는지 판단을 하고, 게임 할 때마다 주사위 값이 바뀌어야 한다.
 
-		Dice01 dice = new Dice01();
-		Dice02 di = new Dice02();
 		
+//		Dice01 di = new Dice01();
+		Dice01 dice = new Dice01();
 		dice.play();
+		dice.Result();
 //		di.play();
 		
 //		dice.game();
-//		dice.Result();
+//		di.play();
+//		di.Result();
+		
 		
 		
 		
