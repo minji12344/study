@@ -1,11 +1,21 @@
 package RPG;
 
 public class Unit {
-	int Level;
-	int Attack;
-	int Health;
+	private String name;
+	private int Level;
+	private int Attack;
+	private int Health;
 	
-	Unit(int Leverl){
+	Unit(){
+		
+	}
+	
+	Unit(String name){
+		this.name=name;
+	}
+	
+	Unit(String name, int Leverl){
+		this.name=name;
 		this.Level=Level;
 	}
 	
@@ -20,9 +30,38 @@ public class Unit {
 		this.Health = Health;
 	}
 	
-	void printattack() {
-		
+	Unit(String name, int Level, int Attack, int Health){
+		this.name = name;
+		this.Level = Level;
+		this.Attack =Attack;
+		this.Health = Health;
 	}
 	
+	void printattack() {
+		System.out.println("공격");
+	}
+	
+	int getLevel() {
+		return Level;
+	}
+	
+	int getAttack() {
+		return Attack;
+	}
+	int getHealth() {
+		return Health;
+	}
+	
+	void setLevel(int Level) {
+		this.Level = Level; 
+	}
+	
+	void setAttack(int Attack) {
+		this.Attack = Attack; 
+	}
+	
+	void setHealth(int Health) {
+		this.Health = Health; 
+	}
 	
 }

@@ -41,8 +41,11 @@ public class Korean extends Restaurant{
 	void printseat() {
 		System.out.println("예약은 총 " + seat + "명 가능합니다.");
 	}
+//	void printsea(Consumer con) {
+//		seat = 6;
+//		System.out.println("예약은 총 " + ((this.seat - con.getnum()) +  con.getnumber()) + "명 가능합니다.");
+//	}
 	
-		
 	String getsoju() {
 		return soju;
 	}
