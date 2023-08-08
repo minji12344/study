@@ -1,4 +1,4 @@
-
+package project_0808;
 public class class01 {
 
 	public static void main(String[] args) {
@@ -7,8 +7,8 @@ public class class01 {
 //		cons.num = 10;
 		System.out.println(cons.PI*5*5);
 		System.out.println("우리 어플리케이션 이름 : " + cons.appName);
-		cons.PI = 3.1415926535;
-		cons.appName = "카카오톡2";
+//		cons.PI = 3.1415926535;
+//		cons.appName = "카카오톡2";
 	}
 
 }
