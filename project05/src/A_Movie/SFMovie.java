@@ -1,9 +1,14 @@
 package A_Movie;
 
 public class SFMovie extends Movie{
-	static final String SF = "SF";
+	private static final String SF = "SF";
 	
-	public SFMovie(String title, int time){
+	SFMovie(String title, int time){
+		super(title, time);
+	}
+	
+	@Override
+	void Movie(){
 		super.Movie();
 		System.out.println("장르 : " + SF);
 	}

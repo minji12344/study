@@ -1,20 +1,19 @@
 package A_Student;
 
 public class Student20 extends Student{
-	final int num = 20;
+	static final int num = 20;
+	static int number = 1;
+	int stuNum;
 	
-	Student20(String name, int age, String gender){
-		super(name, age, gender);
-	}
-
-	void Student20(int num){
-		super.Student();
-		System.out.println(name + " 의 학번 : " + this.num  + num );
+	Student20(String name, int age, int num){
+		super(name, age, num);
+		number += 1;
+		stuNum = number;
 	}
 	
+	@Override
 	void Student(){
 		super.Student();
-		System.out.println(name + " 의 학번 : " + this.num  + num );
+		System.out.println("'" + super.getName() + "' 의 학번 : " + this.num  + stuNum);
 	}
-	
 }

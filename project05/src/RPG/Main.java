@@ -12,13 +12,16 @@ public class Main {
 
 		Unit unit = new Unit();
 		
-		Character character = new Character(1, 2, 3);
-		Character character2 = new Character("민지");
-
-		Character_Job cj = new Character_Job(character, "skill", "job");
+		Character character = new Character("민지");
+		Character_Job cj = new Character_Job(character, "job");
+		Monster mon = new Monster("물", "물고기");
 		
-		character2.printname();
-		cj.printattack();
+//		character.printname();
+		cj.printjob();
+		mon.printInfo();
+		mon.printattack();
+		cj.clear((int)(Math.random()*90)+10);
+		
 		
 		
 	}

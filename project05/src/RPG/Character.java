@@ -7,12 +7,12 @@ public class Character extends Unit{
 		this.Character_name = Character_name;
 	}
 	
-	Character(int Level, int Attack, int Healyh){
-		super(Level, Attack,Healyh);
+	Character(int Level, int Damage, int Healyh){
+		super(Level, Damage,Healyh);
 	}
 	
-	Character(String name, int Level, int Attack, int Healyh){
-		super(name ,Level, Attack,Healyh);
+	Character(String name, int Level, int Damage, int Healyh){
+		super(name ,Level, Damage,Healyh);
 	}
 	@Override
 	void printattack() {
@@ -21,6 +21,11 @@ public class Character extends Unit{
 	
 	void printname() {
 		System.out.println("캐릭터 닉네임 : " + Character_name);
+	}
+	
+	void clear(int exp) {
+		System.out.println(exp + "의 경험치 획득");
+		setLevel(exp);
 	}
 	
 	void printLevel() {
