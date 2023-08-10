@@ -1,15 +1,22 @@
 package Shapes;
-
+// 도형
 public class Shapes {
-	public static int Height;
-	public static int base;
+	public static int Length; // 길이
 	
-	Shapes(int Height, int base){
-		this.Height = Height;
-		this.base = base;
+	Shapes(){
 	}
 	
-	void Area() {
-		System.out.println("높이 : " + Height + ", 밑변 :" + base);
+	Shapes(int Length){
+		this.Length = Length;
 	}
+	
+	void Shapes(int Length) {
+		System.out.println(Length);
+	}
+	
+	void printShapes() {
+		System.out.println("길이 :"  + Length);
+	}
+	
+	
 }

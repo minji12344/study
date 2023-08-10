@@ -1,13 +1,17 @@
 package Shapes;
-
+// 사각형 => 정사각형
 public class Rectangle extends Square{
 
-	Rectangle(int Height, int base){
-		super(Height,base);
+	Rectangle(int Length){
+		super(Length);
 	}
 	
-	@Override
-	void Area() {
-		System.out.println("정 사각형의 넓이는 : " + Height*base);
+	void Shapes() {
+		System.out.println("정사각형의 길이 : " + Length);
+		System.out.println("정사각형의 넓이는 : " + Length*Length);
+	}
+	
+	public String toString() {
+		return "정사각형의 넓이는 : " + Height*Height;
 	}
 }
