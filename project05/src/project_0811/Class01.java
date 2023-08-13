@@ -10,7 +10,7 @@ public class Class01 implements fly{
 	@Override
 	public void fly() {
 		// TODO Auto-generated method stub
-		
+		System.out.println(fly +"숫자");
 	}
 
 }
