@@ -10,7 +10,7 @@ public class pro06 {
 		}
 		
 		for(int i=0, j=0 ; i<7; i++) {
-			int num = (int)(Math.random()*45)+1;
+			int num = (int)(Math.random()*7)+1;
 			int check = 0;
 				
 			for(int k = 0; k<=j; k++) {
@@ -20,7 +20,7 @@ public class pro06 {
 					break;
 					}
 				}
-			if(check ==1) {
+			if(check == 1) {
 				continue;
 			}
 			

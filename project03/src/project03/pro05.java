@@ -18,17 +18,17 @@ public class pro05 {
 		
 		System.out.println("===================================");
 
-		System.out.println(sentence.charAt(4));
+		System.out.println(sentence.charAt(4)); // 4번째 문자
 		System.out.println(sentence.indexOf("l")); // 문자열에서 가장 앞에 있는 친구를 찾아서 반환
 		System.out.println(sentence.indexOf("p"));
 		System.out.println(sentence.lastIndexOf('l'));// 가장 뒤에 있는 친구 반환
 		
 		System.out.println("===================================");
 		
-		System.out.println(greeting.concat(sentence));
+		System.out.println(greeting.concat(sentence)); // 문자붙이기
 		System.out.println(greeting.equals("hello"));
-		System.out.println(greeting.equalsIgnoreCase("hello"));
-		System.out.println(greeting.compareTo("Aello"));
+		System.out.println(greeting.equalsIgnoreCase("hello")); // 대소문자 구분없이 문자열 비교
+		System.out.println(greeting.compareTo("Aello")); // 아스키코드로 비교하기
 		System.out.println(greeting.compareTo("Hello"));
 		System.out.println(greeting.compareTo("Hezzo"));
 		
@@ -54,6 +54,8 @@ public class pro05 {
 			index++;
 		}
 		System.out.println(cnt);
+		// System.out.println(index);
+
 		
 		System.out.println("===================================");
 
@@ -91,10 +93,10 @@ public class pro05 {
 			if(x!= y) {
 				System.out.println(false);
 				return;	
-			}
-			
+			}			
 		}
 		System.out.println(true);
+
 		
 		System.out.println("===================================");
 

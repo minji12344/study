@@ -3,7 +3,6 @@ package project03;
 import java.util.Scanner;
 
 public class Dog {
-	
 	String name = "백구";
 	int age = 3;
 	
@@ -13,7 +12,6 @@ public class Dog {
 	
 	
 	void ageCal() {
-
 		System.out.println("사람 나이로 환산하면 " + (24 + (age-2)*4) + "세 입니다.");
 	}
 	
