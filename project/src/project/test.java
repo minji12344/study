@@ -23,7 +23,7 @@ public class test {
 		
 			System.out.println("메뉴를 선택해주세요 : " + "1.콜라 = 500" + ", 2.사이다 = 1000");
 		int str = scan.nextInt();
-		if (str == 1) {
+		if (str == 1 && a>=500) {
 			if(a>=500) {
 			System.out.println("콜라가 나왔습니다. 거스름돈은 " + (a-500)+"입니다.");
 			}
@@ -60,13 +60,13 @@ public class test {
 				}else {
 					System.out.println("잔액이 부족합니다.");
 				}	break;
-				case "제로":
-					if(money >= 1500){
-						System.out.println("제로가 나왔습니다. 거스름 돈은" + (money-1500)+ "입니다.");
-					}else {
-						System.out.println("잔액이 부족합니다.");
-						break;
-					}
+			case "제로":
+				if(money >= 1500){
+					System.out.println("제로가 나왔습니다. 거스름 돈은" + (money-1500)+ "입니다.");
+				}else {
+					System.out.println("잔액이 부족합니다.");
+					break;
+				}
 		
 			
 		}

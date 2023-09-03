@@ -35,7 +35,7 @@ public class projsect03 {
 		System.out.println();
 		int[] arr3 = {1,2,3,4,5,6,7,1,3,7,8,9};
 		for(int  i=0;i<arr3.length;i++) {
-			System.out.println(arr3[i]+" ");
+			System.out.print(arr3[i]+" ");
 		}
 		
 		

@@ -9,7 +9,7 @@ public class project06 {
 		for(int i=0;i<6;i++) {
 			//student[i][i] = 20; //0 0 1 1 2 2
 			for(int j=0;j<4;j++) {
-				student[i][j] = 20;				
+				student[i][j] = 30;				
 			}
 		}
 		for(int i=0;i<6;i++) {
@@ -63,7 +63,7 @@ public class project06 {
 
 
 // 1차원 배열
-
+// 자료형 [] 배열명 = new 자료형 []
 
 
 // 다차원 배열
@@ -74,7 +74,7 @@ public class project06 {
 //왕거지게임
 //{"노예"<"시민"<"귀족"<"왕"}
 
-
+//
 //*
 //**
 //***

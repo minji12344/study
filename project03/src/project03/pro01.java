@@ -15,13 +15,12 @@ public class pro01 {
 	
 	public static void function2(int x) {
 		System.out.println(x);
-		return;
+		// return;
 	}
 	
 	public static int function3(int x,int y) {
 		return x+y;
 	}
-
 	
 }
 
